@@ -38,7 +38,7 @@ public class ExampleTextToSpeech : MonoBehaviour
     #endregion
 
     TextToSpeech _service;
-    string _testString = "<speak version=\"1.0\"><prosody pitch=\"100Hz\">Welcome To A I System of V R Medix</prosody></speak>";  // Test string which you can initialize with any phrase or sentence.
+    string _testString = "<speak version=\"1.0\"><prosody pitch=\"100Hz\">Welcome To A I System of V R Medix, How can I help you?</prosody></speak>";  // Test string which you can initialize with any phrase or sentence.
 
 
     string _createdCustomizationId;
@@ -76,27 +76,27 @@ public class ExampleTextToSpeech : MonoBehaviour
         switch (SpeakState)
         {
             case 1:
-                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Hello Doctor! I am Ravi, Your vitual paisent</prosody></speak>";  // RAvi you there?
+                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Yes, here it is.</prosody></speak>";  // heart you there?
                 Runnable.Run(Jarvis()); // Execute the TTS engine.
                 SpeakState = 0;
                 break;
             case 2:
-                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Doctor I am suffering from fever, I am not able to eat food. please help me sir.</prosody></speak>"; // Bring up design interface
+                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Okay The human heart is an organ that pumps blood throughout the body via the circulatory system,supplying oxygen and nutrients to the tissues and removing carbon dioxide and other wastes.The human heart has four chambers: two upper chambers(the atria) and two lower ones(the ventricles)The right atrium and right ventricle together make up the right heart, and the left atrium and left ventricle make up the left heart.A wall of muscle called the septum separates the two sides of the heart.</prosody></speak>"; // Bring up design interface
                 Runnable.Run(Jarvis());
                 SpeakState = 0;
                 break;
             case 3:
-                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">the fever is from yesterday</prosody></speak>"; // open up project edith prototype
+                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">okay! Blood flows through your heart and lungs in four steps: 1.The right atrium receives oxygen-poor blood from the body and pumps it to the right ventricle through the tricuspid valve. 2.The right ventricle pumps the oxygen - poor blood to the lungs through the pulmonary valve.3.The left atrium receives oxygen-rich blood from the lungs and pumps it to the left ventricle through the mitral valve.4.The left ventricle pumps the oxygen - rich blood through the aortic valve out to the rest of the body.</prosody></speak>"; // open up project edith prototype
                 Runnable.Run(Jarvis());
                 SpeakState = 0;
                 break;
             case 4:
-                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Thank you doctor, i happy from you treatment</prosody></speak>"; // pause rotation || continue
+                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Sure The heart circulates blood through two pathways: the pulmonary circuit and the systemic circuit. </prosody></speak>"; // pause rotation || continue
                 Runnable.Run(Jarvis());
                 SpeakState = 0;
                 break;
             case 5:
-                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Sure sir</prosody></speak>"; // pause rotation || continue
+                _testString = "<speak version=\"1.0\"><prosody pitch=\"110Hz\">Sure The heart circulates blood through two pathways: the pulmonary circuit and the systemic circuit. In the pulmonary circuit, deoxygenated blood leaves the right ventricle of the heart via the pulmonary artery and travels to the lungs,then returns as oxygenated blood to the left atrium of the heart via the pulmonary vein.</prosody></speak>"; // pause rotation || continue
                 Runnable.Run(Jarvis());
                 SpeakState = 0;
                 break;
@@ -151,76 +151,72 @@ public class ExampleTextToSpeech : MonoBehaviour
         Runnable.Run(Jarvis());
     }
 
-    public static IEnumerator I1_HelloRavi()  // Coroutines which sets the state machine. Each one cooresponds to the case statement above.
+    public static IEnumerator I1_human()  // Coroutines which sets the state machine. Each one cooresponds to the case statement above.
     {
-        Debug.Log("Hello");
+        Debug.Log("human");
         SpeakState = 1;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-    public static IEnumerator I2_pro()
+    public static IEnumerator I2_about()
     {
-        Debug.Log("problem");// tell me your problem
+        Debug.Log("about");// tell me your problem
         SpeakState = 2;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-    public static IEnumerator I3_How()
+    public static IEnumerator I3_blood()
     {
-        Debug.Log("how");// how many days you feel like this?
+        Debug.Log("blood");// how many days you feel like this?
         SpeakState = 3;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-    public static IEnumerator I4_ok()
+    public static IEnumerator I4_step()
     {
-        Debug.Log("Ok");
+        Debug.Log("step");
         SpeakState = 4;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-
-
-
-
-    public static IEnumerator I5_Heart()
+    public static IEnumerator I5_skull()
     {
-        Debug.Log("heart");
-        SpeakState = 5;
-        Debug.Log("SpeakState" + SpeakState);
-        yield return null;
-    }
-
-    public static IEnumerator I6_Skull()
-    {
-
         Debug.Log("skull");
-        SpeakState = 6;
+        SpeakState = 1;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-    public static IEnumerator I7_Close()
+    public static IEnumerator I6_close()
     {
+
         Debug.Log("close");
-        SpeakState = 7;
+        SpeakState = 1;
         Debug.Log("SpeakState" + SpeakState);
         yield return null;
     }
 
-    public static IEnumerator I8_Thank()
-    {
-        Debug.Log("thank you");
-        SpeakState = 8;
-        Debug.Log("SpeakState" + SpeakState);
-        yield return null;
-    }
+    //public static IEnumerator I7_Close()
+    //{
+    //    Debug.Log("close");
+    //    SpeakState = 7;
+    //    Debug.Log("SpeakState" + SpeakState);
+    //    yield return null;
+    //}
 
-   
+    //public static IEnumerator I8_Thank()
+    //{
+    //    Debug.Log("thank you");
+    //    SpeakState = 8;
+    //    Debug.Log("SpeakState" + SpeakState);
+    //    yield return null;
+    //}
+
+
 
     private IEnumerator Edith()
     {

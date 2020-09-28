@@ -7730,18 +7730,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -14833,7 +14822,7 @@ PrefabInstance:
     - target: {fileID: 3649167351949566078, guid: 470aebdd582668e43b69d2d3300e43af,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.82300884
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3649167352514062069, guid: 470aebdd582668e43b69d2d3300e43af,
         type: 3}
@@ -41470,18 +41459,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -52525,18 +52503,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -59200,18 +59167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -60822,18 +60778,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -67221,18 +67166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471149085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1545920279}
+      - m_Target: {fileID: 1554902666}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -67405,12 +67339,12 @@ PrefabInstance:
     - target: {fileID: 228703376126455556, guid: a3d8302e0f8fc1041bd08890c74561fb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -137.84317
+      value: -69.9
       objectReference: {fileID: 0}
     - target: {fileID: 228703376126455556, guid: a3d8302e0f8fc1041bd08890c74561fb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 866.9989
+      value: 471.7
       objectReference: {fileID: 0}
     - target: {fileID: 228703376126455556, guid: a3d8302e0f8fc1041bd08890c74561fb,
         type: 3}
@@ -67570,7 +67504,7 @@ PrefabInstance:
     - target: {fileID: 9001448709713528781, guid: a3d8302e0f8fc1041bd08890c74561fb,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.82300884
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9001448709719009262, guid: a3d8302e0f8fc1041bd08890c74561fb,
         type: 3}

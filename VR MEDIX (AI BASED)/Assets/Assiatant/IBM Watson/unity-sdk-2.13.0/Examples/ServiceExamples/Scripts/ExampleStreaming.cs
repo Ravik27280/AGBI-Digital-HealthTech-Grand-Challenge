@@ -59,15 +59,11 @@ public class ExampleStreaming : MonoBehaviour
     public GameObject skull;
     public GameObject heart;
     
-   
-
-   
-     
 
 
 
-    [Header("Ironman Components")]
-    public GameObject[] ironObjects = new GameObject[38];
+    //[Header("Ironman Components")]
+    //public GameObject[] ironObjects = new GameObject[38];
 
     public float speed = 10; // Rotation Speed
 
@@ -243,83 +239,58 @@ public class ExampleStreaming : MonoBehaviour
                     Log.Debug("ExampleStreaming.OnRecognize()", text);
 
 
-                    if (alt.transcript.Contains("hello") && State.Contains("Final")) // hello Vikram ! 
+                    if (alt.transcript.Contains("human") && State.Contains("Final")) // hello Vikram ! 
                     {
                         StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I1_HelloRavi());       //When it detect these words it will execute a Coroutine in the Text to Speech script.
-                        StartCoroutine(wait(4));
-                                              
-                       
-                        
-                       
-                       
-                        
+                        StartCoroutine(ExampleTextToSpeech.I1_human());       //When it detect these words it will execute a Coroutine in the Text to Speech script.
+                        StartCoroutine(wait(2));
+                        heart.SetActive(true);
+
                     }
 
-                    if (text.Contains("problem") && State.Contains("Final")) // Bring up design interface
+                    if (text.Contains("about") && State.Contains("Final")) // Bring up design interface
                     {
                         StopRecording();
 
-                        StartCoroutine(ExampleTextToSpeech.I2_pro());
+                        StartCoroutine(ExampleTextToSpeech.I2_about());
                         // Holodeck.gameObject.SetActive(true);                      //Activates game object/s on Command.
 
                         StartCoroutine(wait(4));
                     }
 
-                    if (text.Contains("how") && State.Contains("Final")) // open up project edith prototype
+                    if (text.Contains("blood") && State.Contains("Final")) // open up project edith prototype
                     {
                         StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I3_How());
+                        StartCoroutine(ExampleTextToSpeech.I3_blood());
                         // Planet.gameObject.SetActive(true);
                         // Glasses.gameObject.SetActive(true);
                         StartCoroutine(wait(5));
                     }
 
-                    if ((text.Contains("Ok")) && State.Contains("Final")) // pause rotation
+                    if ((text.Contains("step")) && State.Contains("Final")) // pause rotation
                     {
                         StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I4_ok());
-                        //if (rotate.speed == 10)
-                        //{
-                        //    rotate.speed = 0;
-                        //}
-                        //else if (rotate.speed == 0)
-                        //{
-                        //    rotate.speed = 10;
-                        //}
-                        //StartCoroutine(wait(3));
+                        StartCoroutine(ExampleTextToSpeech.I4_step());
+                        
                     }
-                    if (text.Contains("heart") && State.Contains("Final")) // Jarvis bring up status
-                    {
-                        StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I5_Heart());
-                        StartCoroutine(wait(7));
-                        heart.SetActive(true);
-                    }
+                   
 
                     if (text.Contains("skull") && State.Contains("Final")) // Integrate deadshot module
                     {
                         StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I6_Skull());
+                        StartCoroutine(ExampleTextToSpeech.I5_skull());
                         skull.SetActive(true);
-                        
-                        StartCoroutine(wait(5));
+                        StartCoroutine(wait(3));
                     }
 
-                    if (text.Contains("close") && State.Contains("Final"))
+                 
+                    if (text.Contains("close") && State.Contains("Final")) // Jarvis activate edith protocol
                     {
                         StopRecording();
-                        StartCoroutine(ExampleTextToSpeech.I7_Close());
-                        StartCoroutine(wait(4));
-                        heart.SetActive(false);
+                        StartCoroutine(ExampleTextToSpeech.I6_close());
                         skull.SetActive(false);
-
+                        heart.SetActive(false);
                     }
-
-                    //if (text.Contains("bye") && State.Contains("Final")) // Jarvis activate edith protocol
-                    //{
-                        
-                    //}
 
                     //if (text.Contains("close") && State.Contains("Final")) // yeah, seems good idea
                     //{
